@@ -1,5 +1,6 @@
 .header {
   padding: 26px 0 22px;
+  background-color: transparent;
 
   @include mobile {
     padding: 22px 0 18px;
@@ -40,7 +41,7 @@
 
     @include small-tablet {
       position: fixed;
-      top: 0; 
+      top: 0;
       left: -100vw;
       z-index: var(--z-index-3);
       flex-direction: column;
@@ -50,7 +51,10 @@
       background-color: var(--neutral-color-10);
       opacity: 0;
       visibility: hidden;
-      transition: left var(--transition), opacity var(--transition), visibility var(--transition);
+      transition:
+        left var(--transition),
+        opacity var(--transition),
+        visibility var(--transition);
 
       &--visible {
         left: 0;
@@ -68,7 +72,8 @@
     background-color: var(--neutral-color-130);
     transform: translateY(8px);
     transition: background-color var(--transition);
-    
+    cursor: pointer;
+
     &::before {
       content: '';
       position: absolute;
@@ -79,9 +84,11 @@
       width: 23px;
       height: 23px;
       background-color: var(--neutral-color-120);
-      transition: left var(--transition), background-color var(--transition);
+      transition:
+        left var(--transition),
+        background-color var(--transition);
     }
-    
+
     &-text {
       position: absolute;
       top: -24px;
@@ -90,7 +97,12 @@
       line-height: 150%;
       text-align: center;
       color: var(--neutral-color-140);
-      transform: translateX(-50%)
+      transform: translateX(-50%);
+
+      @include small-tablet {
+        top: -28px;
+        font-size: 20px;
+      }
     }
 
     &-checkbox {
@@ -130,9 +142,10 @@
     color: var(--neutral-color-100);
 
     @include small-tablet {
+      font-size: 20px;
       line-height: 200%;
     }
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -143,10 +156,12 @@
       background-color: var(--neutral-color-100);
       opacity: 0;
       visibility: hidden;
-      transition: opacity var(--transition), visibility var(--transition);
+      transition:
+        opacity var(--transition),
+        visibility var(--transition);
     }
 
-    &:hover  {
+    &:hover {
       &::after {
         opacity: 1;
         visibility: visible;
@@ -163,8 +178,10 @@
     background-color: #000000b3;
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--transition), visibility var(--transition);
-    
+    transition:
+      opacity var(--transition),
+      visibility var(--transition);
+
     &--visible {
       opacity: 1;
       visibility: visible;
