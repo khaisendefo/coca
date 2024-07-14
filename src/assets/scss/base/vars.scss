@@ -33,6 +33,17 @@
   // container
   --container-padding: 15px;
   --container-width: 1200px;
+  
+  // overview colors
+  --overview-bg-color: #1d1e25;
+
+  @include mini-desktop {
+    --container-width: 1000px;
+  }
+
+  @include tablet {
+    --container-width: 860px;
+  }
 
   @include mobile {
     --container-width: 480px;
@@ -62,4 +73,7 @@
 
   // success colors 
   --success-color-70: #e2f8f033;
+
+  // overview colors
+  --overview-colors: #18181D;
 }
