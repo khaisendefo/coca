@@ -15,7 +15,7 @@
     left: 181px;
     width: 551px;
     height: 551px;
-    background-color: #FA7515;
+    background-color: #fa7515;
     opacity: 0.2;
     filter: blur(220px);
 
@@ -51,7 +51,7 @@
       height: 225px;
     }
   }
-  
+
   &::before,
   &::after {
     content: '';
@@ -63,13 +63,13 @@
 
   &__container {
     @include flex-justify-between;
-    align-items: flex-end;   
+    align-items: flex-end;
 
     @include mini-desktop {
-       gap: 50px;
-       flex-direction: column;
-       align-items: center;
-       text-align: center;
+      gap: 50px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -106,7 +106,7 @@
       font-size: 38px;
     }
   }
- 
+
   &__subtitle {
     margin-bottom: 69px;
 
@@ -130,7 +130,7 @@
       flex-direction: column;
     }
   }
-  
+
   &__input {
     border-bottom: 1px solid var(--neutral-color-40);
     padding-bottom: 23px;
@@ -164,7 +164,7 @@
   &__right {
     position: relative;
     margin-right: 20px;
-    
+
     @include mini-desktop {
       display: none;
     }
@@ -205,7 +205,7 @@
       top: -140px;
       right: -20px;
     }
-    
+
     @include mini-desktop {
       top: 0;
       right: -100px;
@@ -265,7 +265,7 @@
         line-height: 143%;
 
         &--green {
-          color: #60D39C;
+          color: #60d39c;
 
           &::before {
             background: url('../assets/icons/green-arrow-icon.svg');
@@ -273,7 +273,7 @@
         }
 
         &--red {
-          color: #E35454;
+          color: #e35454;
 
           &::before {
             background: url('../assets/icons/red-arrow-icon.svg');
@@ -282,10 +282,10 @@
 
         &--green::before,
         &--red::before {
-           content: '';
-           display: inline-block;
-           width: 12px;
-           height: 12px;
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 12px;
         }
       }
 
